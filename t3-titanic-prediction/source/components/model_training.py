@@ -1,0 +1,63 @@
+import pandas as pd 
+import numpy as np 
+from source.exception import custom_exception
+from source.loggers import logging
+from dataclasses import dataclass
+import os
+import sys
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import accuracy_score
+from source.utlis import evaluate_model
+from source.utlis import save_obj
+
+@dataclass
+class model_training_config:
+    trained_model_path=os.path.join('artifacts','model.pkl')
+
+class model_training:
+    def __init__(self):
+        self.model_training_config=model_training_config()
+
+    def initiate_model_training(self,train_array,test_array):
+        try:
+            logging.info('Splitting training and testing inputs')
+            xtrain,xtest,ytrain,ytest=(
+                train_array[:,:-1],
+                test_array[:,:-1],
+                train_array[:,-1],
+                test_array[:,-1])
+            model=LogisticRegression()
+            
+            lr_param={
+                'class_weight':[None, 'balanced'],
+                'solver':['lbfgs', 'liblinear', 'newton-cg']
+                    }
+            params=[lr_param]
+
+
+            train_accuracy,test_accuracy,train_r2_score,test_r2_score,train_cl_report,test_cl_report,missclassified_samples,classified_samples,confusion_matrix=evaluate_model(xtrain=xtrain,xtest=xtest,ytrain=ytrain,ytest=ytest,
+                                                                        model=model,params=params)
+
+            save_obj(
+                file_path=self.model_training_config.trained_model_path,
+                obj=model
+            )
+
+            print('Training accuracy is: ',train_accuracy)
+            print('Testing accuracy is: ',test_accuracy)
+            print('Train r2_score is: ',train_r2_score)
+            print('Test r2_score is: ',test_r2_score)
+            print('Training set classification report:\n{}'.format(train_cl_report))
+            print('-'*100)
+            print('Testining set classification report:\n{}'.format(test_cl_report))
+            print('-'*100)
+            print('Total mis-classified samples are: {}'.format(missclassified_samples))
+            print('Total classified samples are:{}'.format(classified_samples))
+            print('-'*100)
+            print('Confusion Matrix:\n{}'.format(confusion_matrix))
+
+
+        except Exception as e:
+            raise custom_exception(e,sys)
+
+
