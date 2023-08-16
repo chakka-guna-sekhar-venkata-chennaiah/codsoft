@@ -1,22 +1,5 @@
-<style>
-        .glowing-text {
-            font-family: 'Arial Black', sans-serif;
-            font-size: 48px;
-            text-align: center;
-            animation: glowing 2s infinite;
-        }
-        
-        @keyframes glowing {
-            0% { color: #FF9933; } /* Saffron color */
-            25% { color: #FFFFFF; } /* White color */
-            50% { color: #128807; } /* Green color */
-            75% { color: #0000FF; } /* Blue color */
-            100% { color: #FF9933; } /* Saffron color */
-        }
-        
-</style>
 <div align='center'>
-<h1><p class="glowing-text">⛵ Titanic Survival Prediction ⛵</p></h1>
+<h1><p class="glowing-text">⛵ Titanic Survival Predictor System ⛵</p></h1>
 </div>
 <div align='center'>
 <img src='https://github.com/chakka-guna-sekhar-venkata-chennaiah/pOtH_hOlEs_DeTeCtOr/assets/110555361/fd81a688-7a56-4f1b-b6c3-3de17062a025'  width="1000" height="500">
