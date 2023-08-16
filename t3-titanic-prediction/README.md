@@ -164,7 +164,7 @@ docker run -p (your_desired_port):8501 tagname:latest
     <p>&nbsp  &nbsp  &nbsp  &nbsp  &nbsp  To avoid redeploying the image each time, you can push it to your Docker registry. Before pushing, make sure you are logged in to your Docker account using:
     </p>
 ```bash
-docker login
+docker login 
 ```
 
 <p>Next, push the image to your registry with:</p>
