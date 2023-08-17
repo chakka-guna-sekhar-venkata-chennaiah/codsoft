@@ -174,5 +174,13 @@ docker push account_name/image_name:latest
 ```
 This process allows you to store and retrieve the image from the registry during future deployments, making it more efficient and accessible.
 
+## 7. 📽 __Demo__
 
+
+
+
+
+
+
+https://github.com/chakka-guna-sekhar-venkata-chennaiah/codsoft/assets/110555361/0462420f-b54a-47f2-bd70-7a2efcf5ff38
 
