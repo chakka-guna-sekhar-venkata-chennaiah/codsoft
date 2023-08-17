@@ -124,7 +124,7 @@ docker pull guna1/codsoft-t3-titanic-prediction:latest
 + __Running the image__:
 
 ```bash
-docker run -p 9992:8501 guna1/codsoft-t3-titanic-prediction:latest
+docker run -p 9993:8501 guna1/codsoft-t3-titanic-prediction:latest
 ```
 
 ## 6. :ship: __Deployment using Docker__
@@ -173,8 +173,6 @@ docker login
 docker push account_name/image_name:latest
 ```
 This process allows you to store and retrieve the image from the registry during future deployments, making it more efficient and accessible.
-## 7. 📽 __Demo__
-
 
 
 
