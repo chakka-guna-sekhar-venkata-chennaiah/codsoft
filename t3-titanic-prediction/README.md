@@ -1,8 +1,6 @@
 <div align='center'>
 <h1><p class="glowing-text">⛵ Titanic Survival Predictor System ⛵</p></h1>
 </div>
-<div class="tenor-gif-embed" data-postid="21486394" data-share-method="host" data-aspect-ratio="1.77778" data-width="100%"><a href="https://tenor.com/view/yamato-sinking-ship-battleship-gif-21486394">Yamato Sinking Ship GIF</a>from <a href="https://tenor.com/search/yamato-gifs">Yamato GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
-<div align='center'>
 <img src='https://github.com/chakka-guna-sekhar-venkata-chennaiah/pOtH_hOlEs_DeTeCtOr/assets/110555361/fd81a688-7a56-4f1b-b6c3-3de17062a025'  width="1000" height="500">
 </div>
 <br>
