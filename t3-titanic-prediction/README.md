@@ -1,7 +1,8 @@
 <div align='center'>
 <h1><p class="glowing-text">⛵ Titanic Survival Predictor System ⛵</p></h1>
 </div>
-<img src='https://github.com/chakka-guna-sekhar-venkata-chennaiah/pOtH_hOlEs_DeTeCtOr/assets/110555361/fd81a688-7a56-4f1b-b6c3-3de17062a025'  width="1000" height="500">
+
+<img src='https://github.com/chakka-guna-sekhar-venkata-chennaiah/codsoft/assets/110555361/132c6664-3bf6-428d-bafe-ea6b5873554f'  width="1000" height="500">
 </div>
 <br>
 
